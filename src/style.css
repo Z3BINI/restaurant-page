@@ -36,6 +36,8 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    z-index: 2;
 }
 
 .logo {
@@ -99,6 +101,8 @@ img {
     background-image: url('./main-baner.jpg');
     background-position: center;
     background-size: cover;
+
+    box-shadow: 0 5px 50px black;
 }
 .content {
     flex: auto;
