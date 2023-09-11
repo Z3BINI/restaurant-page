@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #EFF2F1;
 }
 
 body {
@@ -19,13 +20,13 @@ body {
 }
 
 .sidebar {
-    background-color: red;
+    background-color: #FF3F00;
     
     grid-area: sidebar;
 }
 
 .main {
-    background-color: blue;
+    background-color: #537A5A;
     
     grid-area: main;
 
