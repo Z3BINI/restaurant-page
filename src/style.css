@@ -140,8 +140,8 @@ img.owners {
     justify-content: center;
     gap: 20px;
     background-color: #283b2b;
-    padding: 20px;
-    border-radius: 5px;
+    width: 100%;
+    padding: 20px 0;
 
     flex-wrap: wrap;
 }
