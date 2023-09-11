@@ -14,7 +14,7 @@ body {
     height: 100%;
 
     display: grid;
-    grid-template: 1fr / 1fr 2fr;
+    grid-template: 1fr / 1fr 4fr;
     grid-template-areas: "sidebar main";
 }
 
@@ -28,4 +28,17 @@ body {
     background-color: blue;
     
     grid-area: main;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    flex: 0 1 300px;
+    background-image: url('./../main-baner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.content {
+    flex: auto;
 }
