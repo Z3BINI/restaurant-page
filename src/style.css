@@ -87,9 +87,9 @@ img {
     color:#002D72;    
 }
 
-.main {
+.main {    
     background-color: #537A5A;
-    
+
     grid-area: main;
 
     display: flex;
@@ -106,4 +106,16 @@ img {
 }
 .content {
     flex: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 98%;
+    height: 95%;
+    
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
 }
