@@ -53,6 +53,7 @@ export default (function() {
     //Give elements classes
     linkContainer.classList.add('links');
     logo.classList.add('logo');
+    chickenLogo.classList.add('chicken');
 
     //Append elements to parent
     logo.appendChild(chickenLogo);
