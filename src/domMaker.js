@@ -10,6 +10,7 @@ export default (function() {
     const wrapper = document.createElement('div');
     const sideBarEl = document.createElement('div');
     const mainEl = document.createElement('div');
+    const footerEl = document.createElement('div');
 
     const bannerEl = document.createElement('div');
     const contentEl = document.createElement('div');
@@ -20,12 +21,14 @@ export default (function() {
     mainEl.classList.add('main');
     bannerEl.classList.add('banner');
     contentEl.classList.add('content');
+    footerEl.classList.add('footer');
 
     //Append elements
     body.appendChild(wrapper);
 
     wrapper.appendChild(sideBarEl);
     wrapper.appendChild(mainEl);
+    wrapper.appendChild(footerEl);
 
     mainEl.appendChild(bannerEl);
     mainEl.appendChild(contentEl);

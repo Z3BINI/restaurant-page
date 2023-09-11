@@ -34,8 +34,10 @@ img.owners {
     height: 100%;
 
     display: grid;
-    grid-template: 1fr / 1fr 4fr;
-    grid-template-areas: "sidebar main";
+    grid-template: 10fr 1fr / 1fr 4fr;
+    grid-template-areas: 
+    "sidebar main"
+    "footer footer";
 }
 
 .sidebar {
@@ -155,4 +157,10 @@ img.owners {
 }
 .owners {
     flex: 0 1 auto;
+}
+
+.footer {
+    grid-area: footer;
+
+    background-color: #283b2b;
 }
