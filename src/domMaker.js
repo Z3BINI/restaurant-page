@@ -32,10 +32,35 @@ export default (function() {
 
     /*INNER ELEMENTS*/
     //Create sidebar elements
-    const logo = document.createElement('img');
+    const logo = document.createElement('div');
+    const chickenLogo = document.createElement('img');
+    const logoText = document.createElement('p');
 
-    logo.src = pokpok;
+    const linkContainer = document.createElement('div');
+    const menuItems = [];
+    for (let i = 0; i < 3; i++) {
+        menuItems[i] = document.createElement('a');
+    }
+    
+    //Add element content
+    chickenLogo.src = pokpok;
+    logoText.textContent = 'Gina\'s Portuguese Chicken!';
+
+    menuItems[0].textContent = 'HOME';
+    menuItems[1].textContent = 'MENU';
+    menuItems[2].textContent = 'ABOUT US';
+
+    //Give elements classes
+    linkContainer.classList.add('links');
+    logo.classList.add('logo');
+
+    //Append elements to parent
+    logo.appendChild(chickenLogo);
+    logo.appendChild(logoText);
+
+    menuItems.forEach(menuItem => linkContainer.appendChild(menuItem));
 
     sideBarEl.appendChild(logo);
+    sideBarEl.appendChild(linkContainer);
 
 })();
