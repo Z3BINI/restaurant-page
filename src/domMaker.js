@@ -63,4 +63,6 @@ export default (function() {
     sideBarEl.appendChild(logo);
     sideBarEl.appendChild(linkContainer);
 
+    return {bannerEl, contentEl}
+
 })();
