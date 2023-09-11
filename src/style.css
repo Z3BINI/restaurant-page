@@ -1,3 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 2fr;
+    grid-template-areas: 
+    "sidebar main"
+    "sidebar main";
+}
+
+.sidebar {
+    background-color: red;
+    
+    grid-area: sidebar;
+}
+
+.main {
     background-color: blue;
+    
+    grid-area: main;
 }
