@@ -1,4 +1,5 @@
 import owners from './owners.jpg';
+import mainBanner from './main-baner.jpg';
 
 export default (function() {
 
@@ -29,5 +30,5 @@ export default (function() {
 
 
     //Return content
-    return {contentWrapper};
+    return {contentWrapper, mainBanner};
 })();
