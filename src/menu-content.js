@@ -5,11 +5,13 @@ export default (function() {
     //Create
     const contentWrapper = document.createElement('div');
     const innerWrapper = document.createElement('div');
+    const title = document.createElement('h1');
 
     const gridSquares = [];
     const gridImgs = [];
     const gridTxts = [];
 
+    
     //Lazy loop for menu mock elements
     for (let i = 0; i < 6; i++) {
         //Create mock menu squares & inner elements
@@ -31,11 +33,13 @@ export default (function() {
         //Append this created outter element to the outter wrapper
         innerWrapper.appendChild(gridSquares[i]);
     }
+    title.textContent = 'The menu:';
 
     //Class
     innerWrapper.classList.add('menu-grid');
     contentWrapper.classList.add('content-wrapper');
 
+    contentWrapper.appendChild(title);
     contentWrapper.appendChild(innerWrapper);
     
     return {contentWrapper, menuBanner}
