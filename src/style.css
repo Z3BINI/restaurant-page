@@ -163,4 +163,8 @@ img.owners {
     grid-area: footer;
 
     background-color: #283b2b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -39,6 +39,8 @@ export default (function() {
     const chickenLogo = document.createElement('img');
     const logoText = document.createElement('p');
 
+    const footerPEl = document.createElement('p');
+
     const linkContainer = document.createElement('div');
     const menuItems = [];
     for (let i = 0; i < 3; i++) {
@@ -53,6 +55,8 @@ export default (function() {
     menuItems[1].textContent = 'MENU';
     menuItems[2].textContent = 'ABOUT US';
 
+    footerPEl.innerHTML = 'Made by <a href="https://github.com/Z3BINI">Z3BINI</a>';
+
     //Give elements classes
     linkContainer.classList.add('links');
     logo.classList.add('logo');
@@ -66,6 +70,8 @@ export default (function() {
 
     sideBarEl.appendChild(logo);
     sideBarEl.appendChild(linkContainer);
+
+    footerEl.appendChild(footerPEl);
 
     return {bannerEl, contentEl}
 
