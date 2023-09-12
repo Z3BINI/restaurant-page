@@ -29,7 +29,7 @@ const listener = (function() {
                 break;
             case 'MENU':
                 structure.contentEl.appendChild(menu.contentWrapper);
-                structure.bannerEl.style.backgroundImage = `url('${menu.mainBanner}')`;
+                structure.bannerEl.style.backgroundImage = `url('${menu.menuBanner}')`;
                 break;
             case 'ABOUT US':
                 structure.contentEl.appendChild(about.contentWrapper);
