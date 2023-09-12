@@ -45,6 +45,7 @@ export default (function() {
     const menuItems = [];
     for (let i = 0; i < 3; i++) {
         menuItems[i] = document.createElement('a');
+        menuItems[i].classList.add('menu');
     }
     
     //Add element content
